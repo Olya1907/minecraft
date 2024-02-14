@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+@import '/clear-styles.css';
+
+body {
+    font-family: Outfit;
+    font-style: normal;
+}
+
+.page {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    background: url('/images/bg_body.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.container {
+    max-width: 1130px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+/* ---------------------------------------------------- Header */
+
+.header {
+    padding: 44px 0;
+    background: rgba(22, 22, 22, 0.50);
+}
+
+.header__block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header__logo {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.header__slogan {
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 11px;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.header__menu {
+    display: flex;
+    gap: 20px;
+}
+
+.header__item {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.header__item:hover {
+    color: #0A0;
+}
+
+/* ---------------------------------------------------- Creeper */
+
+.creeper {
+    padding-top: 45px;
+}
+
+.creeper__block {
+    display: flex;
+    align-items: flex-end;
+    padding: 0 24px;
+    background: url('/images/creeper.jpg') no-repeat center;
+    background-size: cover;
+    /* height: 460px; */
+}
+
+.creeper__info-block {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 52px;
+    padding-top: 385px;
+    padding-bottom: 10px;
+    /* height: 150px; */
+    /* padding: 10px 25px; */
+
+    /* background: linear-gradient(0deg, #000 0%, rgba(0, 0, 0, 0.90) 48.44%, rgba(0, 0, 0, 0.00) 100%); */
+
+}
+
+.creeper__info {}
+
+.creeper__title {
+    padding-bottom: 8px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: normal;
+    color: #FFF;
+}
+
+.creeper__text {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.50);
+}
+
+.creeper__buttons {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    gap: 6px;
+}
+
+.creeper__button {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(65, 65, 65);
+    /* margin: 3px; */
+}
+
+
+/* ---------------------------------------------------- Медиа запросы */
+
+/* от 1599 до 1280 */
+@media (max-width: 1599px) {}
+
+/* от 1279 до 1025 */
+@media (max-width: 1279px) {}
+
+/* от 1024 до 768*/
+@media (max-width: 1024px) {
+    .header__block {
+        align-items: center;
+    }
+
+    .header__left {
+        flex-direction: column;
+    }
+}
+
+/* от 767 */
+@media (max-width: 767px) {
+    .header__menu {
+        flex-direction: column;
+    }
+}
