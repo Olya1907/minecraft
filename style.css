@@ -170,6 +170,91 @@ body {
     letter-spacing: 0.7px;
 }
 
+/* ---------------------------------------------------- footer */
+
+.footer {
+    padding-top: 55px;
+    padding-bottom: 35px;
+    background: rgba(0, 0, 0, 0.70);
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.70);
+}
+
+.footer__block {}
+
+.footer__menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 55px;
+}
+
+.footer__about {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 335px;
+}
+
+.footer__title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 5.6px;
+    text-transform: uppercase;
+    color: #FFF;
+}
+
+.footer__slogan {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.89px;
+    text-transform: uppercase;
+    color: #FFF;
+}
+
+.footer__description {
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: normal;
+    color: #FFF;
+}
+
+.footer__links {}
+
+.footer__title-links {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: normal;
+    color: #FFF;
+}
+
+ul {
+    color: #FFF;
+    font-family: Outfit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px; /* 187.5% */
+}
+
+
+
+
+
+
+
+.footer__network {}
+
+
+
+
+
+
+
+
+
+
 /* ---------------------------------------------------- Медиа запросы */
 
 /* от 1599 до 1280 */
@@ -194,6 +279,11 @@ body {
 
     .cards__item {
         max-width: unset;
+    }
+
+    .footer__menu {
+        flex-direction: column;
+        gap: 40px;
     }
 }
 
