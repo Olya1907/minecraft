@@ -145,6 +145,7 @@ body {
 }
 
 .cards__item {
+    position: relative;
     width: 100%;
     max-width: 300px;
     padding: 40px 20px;
@@ -168,6 +169,26 @@ body {
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.7px;
+}
+
+.cards__block-number {
+    position: absolute;
+    top: -40px;
+    left: -5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 35px;
+    border-radius: 20px 0px 0px 0px;
+    background: #282828;
+}
+
+.cards__num {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 900;
+    color: #FFF;
 }
 
 /* ---------------------------------------------------- footer */
@@ -223,19 +244,29 @@ body {
 .footer__links {}
 
 .footer__title-links {
+    padding-bottom: 8px;
     font-size: 32px;
     font-weight: 500;
     line-height: normal;
     color: #FFF;
 }
 
-ul {
+.footer ul {
     color: #FFF;
     font-family: Outfit;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-height: 30px; /* 187.5% */
+    line-height: 30px;
+    /* 187.5% */
+}
+
+.footer li {
+    cursor: pointer;
+}
+
+.footer li:hover {
+    color: #0A0;
 }
 
 
@@ -275,6 +306,7 @@ ul {
 
     .cards__block {
         flex-direction: column;
+        gap: 55px;
     }
 
     .cards__item {
